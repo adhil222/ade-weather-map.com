@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADE Weather Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ADE Weather Map</h1>
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weather-info" class="weather-info">
+            <i id="weather-icon" class="weather-icon"></i>
+            <p id="weather-description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
